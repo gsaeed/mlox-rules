@@ -161,6 +161,7 @@ Owned Beds NOM.esp
 TR NoM-style Bed Renting.esp
 TR Improved Inns Add-on for NoM.esp
 Remiros' Tombs Expansion*.esp
+YAJAN.esp
 Merged_Objects.esp
 Merged Objects.esp
 Merged_Leveled_Lists.esp
@@ -2757,18 +2758,6 @@ Adanumuran_Reclaimed.esp
 Spell Scroll Text Overhaul.esp
 Extended Daedric Scrolls.ESP
 
-[Conflict]
- Choose only one plugin:
- (Ref: "https://www.nexusmods.com/morrowind/mods/49205")
-Wares-FULL.ESP
-Wares-Containers.ESP
-
-[Conflict]
- Choose only one plugin:
- (Ref: "https://www.nexusmods.com/morrowind/mods/49205")
-Wares-FULL.ESP
-Wares-Rebuilt.esp
-
 [ORDER]
 Beautiful cities of Morrowind.esp
 Functional Slave Markets.esp
@@ -2788,17 +2777,6 @@ Slave Markets_*.esp
 [ORDER]
 Beautiful cities of Morrowind.esp
 Improved Inns Expanded*.esp
-[Conflict]
- Choose only one plugin:
- (Ref: "https://www.nexusmods.com/morrowind/mods/49205")
-Wares-FULL.ESP
-Wares-TR_DATA.esp
-
-[Conflict]
- Choose only one plugin:
- (Ref: "https://www.nexusmods.com/morrowind/mods/49205")
-Wares-FULL.ESP
-Wares-Vanilla.esp
 
 [ORDER]
 OAAB_Data.esm
@@ -3113,6 +3091,11 @@ The Merchants of Sadrith Mora.ESP
 Beautiful cities of Morrowind.ESP
 Barabus' fireplaces*.ESP
 
+[Conflict]
+ Not compatible as BCoM alrady overhauls the same place:
+Beautiful cities of Morrowind.ESP
+Duke's Throne Room Overhaul.ESP
+
 [ORDER]
 multipatch.esp
 Mashed Lists.esp
@@ -3159,3 +3142,24 @@ Brevur of Balmora - Finally Some Good Statue Mod.esp
 [Order]
 Wares-base.esm
 Solstheim Tomb of The Snow Prince.esm
+Wares_Vvardenfell.esp
+Wares_TR.esp
+Wares-TR_DATA.esp
+Wares-MOAR.ESP
+
+[Requires]
+ You only need ONE of the above:
+Wares-base.esm
+[ANY Wares_Vvardenfell.esp
+     Wares_TR.esp
+     Wares-TR_DATA.esp]
+
+[Order]
+Liar yes Idiot no.ESP
+F&F_companions.ESP
+
+[Conflict]
+ You only need ONE:
+Wares_Vvardenfell.esp
+Wares_TR.esp
+Wares-TR_DATA.esp
