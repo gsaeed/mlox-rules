@@ -66,6 +66,7 @@
 
 [NearStart]
 F&F_*.esp
+Wares_NPC*.esp
 Walkers of Morrowind.esp
 Book Jackets - Morrowind.esp
 Book Jackets - Tribunal.esp
@@ -1528,6 +1529,7 @@ SilverArmourIntegration.ESP
 [ORDER]
 Trackless Grazeland.ESP
 Beautiful cities of Morrowind.ESP
+BCoM for Wares.ESP
 
 [ORDER]
 Beautiful cities of Morrowind.ESP
@@ -2734,20 +2736,22 @@ F&F_TR.esp
 
 [ORDER]
 the_watchman.ESP
-Taddeus Foods of Tamriel.ESP
+Taddeus_Foods_of_Tamriel.ESP
+F&F_companions.ESP
+
 
 [ORDER]
 BeaconOfstRilms.ESP
-Taddeus Foods of Tamriel.ESP
+Taddeus_Foods_of_Tamriel.ESP
 
 [ORDER]
 Immersive Mournhold.ESP
-Taddeus Foods of Tamriel.ESP
+Taddeus_Foods_of_Tamriel.ESP
 
 [Conflict]
  Choose only one plugin:
  (Ref: "https://www.nexusmods.com/morrowind/mods/49388")
-Taddeus Foods of Tamriel.ESP
+Taddeus_Foods_of_Tamriel.ESP
 Taddeus Foods of Tamriel Light.ESP
 
 [ORDER]
@@ -3151,8 +3155,11 @@ Wares-MOAR.ESP
  You only need ONE of the above:
 Wares-base.esm
 [ANY Wares_Vvardenfell.esp
-     Wares_TR.esp
-     Wares-TR_DATA.esp]
+     Wares_TR.esp]
+
+[Requires]
+Wares-TR_DATA.esp
+Wares_Vvardenfell.esp
 
 [Order]
 Liar yes Idiot no.ESP
@@ -3162,4 +3169,52 @@ F&F_companions.ESP
  You only need ONE:
 Wares_Vvardenfell.esp
 Wares_TR.esp
-Wares-TR_DATA.esp
+
+[Order]
+Animated_Morrowind - merged*.esp
+People of Pelagiad.ESP
+
+[Order]
+Beautiful cities of Morrowind.esp
+High Art.esp
+
+[Order]
+Boys in the Hood.ESP
+Olafs_Cloaks_and_Hoods.ESP
+
+[Order]
+Better Bodies.esp
+Better Bodies_1C.esp
+MelsTatsNord.esp
+
+[Order]
+EE_Wares_Curated.esp
+UFR_v3dot2.esp
+
+[Order]
+Spell Scroll Text Overhaul.esp
+Extended Daedric Scrolls.esp
+Unique Jewelry and Accessories.esp
+
+[Order]
+Birthsigns.esp
+Twin_Moons_-_Birthsigns_Reimagined.esp
+
+[Order]
+Playable NPC Classes.esp
+Way of the Necromancer.esp
+
+[Order]
+Better Clothes Complete.esp
+TealPanda Wares.esp
+UFR_v3dot2.esp
+Unique Jewelry Redone.esp
+
+[Order]
+UFR_v3dot2.esp
+IceNioLivRobeReplacer*.esp
+Robe of the Drake's Pride.ESP
+
+[Order]
+Hold_it*.ESP
+Wares_NPC*.esp
