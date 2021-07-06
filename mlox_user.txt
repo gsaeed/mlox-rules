@@ -1450,20 +1450,18 @@ Main Quest Overhaul.esp
 Immersive_corprus.ESP
 
 [Order]
-Hold it - replacerWS.ESP
-Hold it - replacer.ESP
+Hold_it_main*.ESP
+
 DreamersExpansion.ESP
 Hold it - Dreamers.ESP
 
 [Order]
-Hold it - replacerWS.ESP
-Hold it - replacer.ESP
+Hold_it_main*.ESP
 Starfires NPC Additions ver-1.13.esp
 Hold it - SF npc addon.esp
 
 [Order]
-Hold it - replacerWS.ESP
-Hold it - replacer.ESP
+Hold_it_main*.ESP
 Hold it - TR addon.ESP
 
 [Order]
@@ -1783,7 +1781,7 @@ Face Originality and Duner Nobles Overhaul.ESP
 Animated_Morrowind - merged.esp
 
 [ORDER]
-Hold it - replacerWS.ESP
+Hold_it_main_WS.ESP
 DD_Caldera_Expansion + Stonewood Pass Patch.ESP
 
 [ORDER]
@@ -1803,7 +1801,7 @@ Better Clothes_v1.1.esp
 Articus Solstheim Clothes.esp
 
 [ORDER]
-Hold it - replacerWS.ESP
+Hold_it_main_WS.ESP
 Hold it - Dreamers.ESP
 Hold it - COM addon.ESP
 Hold it - SF npc addon.ESP
@@ -2686,8 +2684,8 @@ F&F_TR.ESP
 F&F_companions.ESP
 F&F_heads_vanilla.ESP
 F&F_heads_Westly.ESP
-F&F_MOAR.ESP
 F&F_scarce.ESP
+F&F_MOAR.ESP
 F&F_NoSitters.ESP
 
 [ORDER]
@@ -3185,3 +3183,49 @@ Robe of the Drake's Pride.ESP
 [Order]
 Hold_it*.ESP
 Wares_NPC*.esp
+
+[Conflict]
+ Choose only one plugin:
+  veg-TotW.esp - Core mode.
+  veg-TotW-books.esp - Adds additional books, journals, and notes.
+  veg-TotW-MSrestored.esp - Restores Mephala's Skill with its Fortify Attack effect.
+  veg-TotW-books-MSrestored.esp - Adds additional books, and restores Mephala's skill.
+veg-TotW.esp
+veg-TotW-books.esp
+veg-TotW-MSrestored.esp
+veg-TotW-books-MSrestored.esp
+
+[Conflict]
+ Choose only one plugin:
+  Of Justice and Innocence.esp - Divides the dungeon up into 4 cells and uses many lights.
+  OJAI - Framerate Version.esp - Divides the dungeon up into 6 cells and removes some lights to help increase framerate. This is the recommended version for most users.
+Of Justice and Innocence.esp
+OJAI - Framerate Version.esp
+
+[Conflict]
+ Choose only one plugin:
+  MDMD - More Deadly Morrowind Denizens.esp - Full MDMD experience.
+  MDMD - Bosses Only.esp - Only change bosses of faction questlines and artifact owners.
+MDMD - More Deadly Morrowind Denizens.esp
+MDMD - Bosses Only.esp
+
+[Conflict]
+ OAAB Tombs and Towers includes and supercedes Urshilaku Burial Caverns Overhaul.
+  OAAB - Tombs and Towers.esp
+  Urshilaku Burial Caverns Overhaul.esp
+OAAB - Tombs and Towers.esp
+Urshilaku Burial Caverns Overhaul.esp
+
+[Conflict]
+ OAAB Tombs and Towers includes and supercedes Mawia Overhaul.
+  OAAB - Tombs and Towers.esp
+  Mawia Overhaul.esp
+OAAB - Tombs and Towers.esp
+Mawia Overhaul.esp
+
+[Conflict]
+ OAAB Tombs and Towers includes and supercedes Remiros' Tombs Expansion.
+  OAAB - Tombs and Towers.esp
+  Remiros' Tombs Expansion.esp
+OAAB - Tombs and Towers.esp
+Remiros' Tombs Expansion.esp
