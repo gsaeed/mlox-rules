@@ -1309,6 +1309,11 @@ The Publicans.ESP
 Tales of Ald Velothi.esp
 
 [Order]
+LGNPC_Aldruhn_v*.esp
+LGNPC_Aldruhn_suppl.esp
+The Publicans (LGNPC compatible version).ESP
+
+[Order]
 RP House Hlaalu.esp
 The G93 Vanilla Quest Tweaks, RP Choices, Consequences Super Mega Package - Ultimate Edition.ESP
 
@@ -1555,7 +1560,7 @@ Animated_Morrowind - merged.esp
 [ORDER]
 Beautiful cities of Morrowind.ESP
 Suran_Underworld_v3.esp
-BOM_Vanilla_Suran.esp
+BOM_White_Suran.esp
 
 [ORDER]
 Fighters_Guild_Questline_Overhaul.ESP
@@ -2739,7 +2744,7 @@ Functional Slave Markets.esp
 
 [ORDER]
 Beautiful cities of Morrowind.esp
-BOM_Stavs_remover.esp
+BOM_Stavs_MGO.ESP
 
 [ORDER]
 Beautiful cities of Morrowind.esp
@@ -3257,6 +3262,11 @@ Improved Inns Expanded*.esp
 The Publicans.ESP
 
 [Conflict]
+ Only use one of them, not both.
+The Publicans.ESP
+The Publicans (LGNPC compatible version).ESP
+
+[Conflict]
  The patch included in BCoM is an esp replacer so Welcome Home.esp needs to be deactivated.
 Welcome Home.esp
 Welcome Home - BOM.esp
@@ -3290,8 +3300,16 @@ BCOM_Suran Expansion.esp
 
 [Order]
 BCOM_Suran Expansion.esp
-BOM_Vanilla_Suran.esp
+BOM_White_Suran.esp
 
 [Order]
 BCOM_Suran Expansion.esp
 BCOM_suran underworld_expansion patch.esp
+
+[ORDER]
+OAAB_Grazelands.ESP
+Trackless Grazeland.ESP
+
+[Order]
+BOM_pathgrid_reset.esp
+BOM_Vanilla Trees.ESP
