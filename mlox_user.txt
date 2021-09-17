@@ -461,6 +461,11 @@ Djangos Dialogue.esp
 Less_Generic_Nerevarine.esp
 
 [Order]
+Greetings for No Lore.esp
+LGNPC_NoLore.esp
+GfNL-LGNPC Patch.esp
+
+[Order]
 K_Potion_Upgrade_1.2.esp
 K_Scroll_Upgrade_MW_Trib_Bmoon.esp
 Key Replacer Trib & BM.esp
@@ -1851,6 +1856,7 @@ BearArmorReplacer.ESP
 Bonemold_Armor.ESP
 BB Dark Brotherhood by Westly.esp
 New Boots of Blinding Speed.ESP
+Alex's Better Fitted Female Armors.ESP
 Plangke's Female Cuirass Replacer.esp
 
 ; Get the Rise of House Telvanni files in order.
@@ -3313,3 +3319,68 @@ Trackless Grazeland.ESP
 [Order]
 BOM_pathgrid_reset.esp
 BOM_Vanilla Trees.ESP
+
+[Order]
+Ashfall.esp
+Bandits camps*.esp
+
+[Order]
+Unique_CaveRats.ESP
+Synthesis Series - Creatures and Diseases.ESP
+
+[Requires]
+Better Siege at Firemoth Followers.ESP
+Siege at Firemoth.esp
+
+[Order]
+Siege at Firemoth.esp
+Better Siege at Firemoth Followers.ESP
+
+[Order]
+Beautiful cities of Morrowind.esp
+BCOM_Striderport Lights.ESP
+
+[Order]
+Animated Morrowind*.ESP
+Library_AM_addon.ESP
+
+[Order]
+Animated Morrowind*.ESP
+RPNR_Library.ESP
+
+[ORDER]
+Beautiful cities of Morrowind.ESP
+Cephalopod armor_BOM_patch.esp
+
+[ORDER]
+Beautiful cities of Morrowind.ESP
+RR_Cephalopod Armor_BOM_patch.esp
+
+[Order]
+Predator Beast Races.esp
+Argonian Diversity - Naga Breed.esp
+
+[Order]
+Beautiful cities of Morrowind.esp
+BCOM_Vanilla Ghostgate Pillars.ESP
+
+[Order]
+SOP_Canal_02.ESP
+BalmoraDocks.ESP
+
+[Order]
+SOP_Canal_01.ESP
+BalmoraDocks.ESP
+
+[ORDER]
+Beautiful cities of Morrowind.ESP
+MasterIndexRedux.esp
+
+[Order]
+Merged_Objects.esp
+VFWE_merged_objects_fix.ESP
+
+[Order]
+Solstheim Tomb of the Snow Prince.esm
+MW_Children_1_0.esm
+
