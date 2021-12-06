@@ -117,6 +117,10 @@ Merged Objects.esp
 Merged_Leveled_Lists.esp
 multipatch.esp
 Mashed Lists.esp
+BTBGI Loot Patch.ESP
+BTBGI Loot Patch - TCBOO.ESP
+Weapons Integrated BTBGI Loot Patch.ESP
+Weapons Integrated BTBGI Loot Patch - TCBOO.ESP
 Morrowind Crafting 2*.esp
 Morrowind Crafting Equipment.esp
 Morrowind Crafting Houses.esp
@@ -167,8 +171,8 @@ TR NoM-style Bed Renting.esp
 TR Improved Inns Add-on for NoM.esp
 Remiros' Tombs Expansion*.esp
 BOM_pathgrid_reset.esp
-BOM_OpenMW_plazas.esp
 Interior exterior flag reset.esp
+BOM_OpenMW_plazas.esp
 YAJAN.esp
 
 [Order]
@@ -1932,8 +1936,8 @@ Welcome to the Arena*.esp
 Merged Objects.esp
 multipatch.esp
 BOM_pathgrid_reset.esp
-BOM_OpenMW_plazas.esp
 Interior exterior flag reset.esp
+BOM_OpenMW_plazas.esp
 
 [Order]
 Improved Inns Expanded.esp
@@ -2690,7 +2694,6 @@ KS_Julan_MRM_Patch*.esp
 
 [ORDER]
 Animated_Morrowind - merged.esp
-F&F_MW.ESP
 F&F_TR.ESP
 F&F_companions.ESP
 F&F_heads_vanilla.ESP
@@ -2706,15 +2709,11 @@ Shal_Overgrown.esp
 [Conflict]
  F&F includes and expands on CM_Partners, Outlaws, Starfire's npcs and MCA
  (Ref: "https://www.nexusmods.com/morrowind/mods/49251?")
-F&F_MW.ESP
+F&F_base.esm
 CM_Partners_*.esp
 Outlaws.esp
 Starfires*.esp
 MCA*.esp
-
-[Requires]
-F&F_TR.esp
-F&F_MW.esp
 
 [ORDER]
 the_watchman.ESP
@@ -2776,7 +2775,10 @@ Ownership Overhaul.esp
 Dark Brotherhood Armor Replacer.esp
 Expansions Integrated.esp
 BTB's Game Improvements (Necro Edit).esp
+BTB's Game Improvements (Necro Edit).Tweaked.esp
+BTB's Game Improvements*.esp
 BTBGI PFP Patch.esp
+Morrowind Anti-Cheese Tweaked.esp
 Beware the Sixth House.esp
 Tribunal Rebalance.esp
 Bloodmoon Rebalance.esp
@@ -3086,6 +3088,7 @@ Duke's Throne Room Overhaul.ESP
 multipatch.esp
 Mashed Lists.esp
 F&F_scarce.ESP
+F&F_Friends_only.ESP
 F&F_MOAR.ESP
 F&F_NoSitters.ESP
 
@@ -3252,6 +3255,7 @@ Beautiful cities of Morrowind.esp
 [Order]
 The Doors of Oblivion*.esp
 Corprusarium_Doors_of_Oblivion_Patch.ESP
+Doors of Oblivion+TOTSP Patch.esp
 
 [Order]
 Beautiful cities of Morrowind.esp
@@ -3384,3 +3388,151 @@ VFWE_merged_objects_fix.ESP
 Solstheim Tomb of the Snow Prince.esm
 MW_Children_1_0.esm
 
+;[Order]
+;Ownership Overhaul.esp
+;Morrowind Anti-Cheese.esp
+
+[Order]
+Glass Domes of Vivec.esp
+Glass Domes of Vivec Ownership Overhaul Patch.ESP
+
+[Order]
+A Bard's Life.esp
+F&F_companions.ESP
+
+[Order]
+A Bard's Life.esp
+Taddeus_Foods_of_Tamriel.ESP
+
+[Order]
+A Bard's Life.esp
+MTC.esp
+
+[Order]
+Beautiful cities of Morrowind.esp
+An Armigers Tale*.esp
+
+[Order]
+An Armigers Tale*.esp
+BCOM_Arvesa_patch.esp
+
+[Order]
+BTB's Game Improvements*.esp 
+avp BTBGI-NE - Factions*.esp
+
+[Order]
+TR_Factions.esp
+avp BTBGI-NE - Factions*.esp
+
+[Order]
+BTBGI Loot Patch.ESP
+OAAB BTBGI Loot Patch.ESP
+
+[Order]
+OAAB An Issue of Thrust.ESP
+BTBGI Loot Patch.ESP
+
+[Order]
+OAAB Oriental Weapon Integration.ESP
+BTBGI Loot Patch.ESP
+
+[Order]
+OAAB Spears.ESP
+BTBGI Loot Patch.ESP
+
+[Order]
+Ahead of the Classes.ESP
+Ahead of the Classes-FF addon.ESP
+F&F_companions.ESP
+
+[Order]
+Beautiful cities of Morrowind.esp
+Guild of Vampire Hunters.esp
+
+[Order]
+TLAD*.esp
+True Lights and Darkness PS TWEAKS.ESP
+True Skyrimized Torches.esp
+Glowing Flames - NoMoreLightlessFlames v1.1.ESP
+Glowing Flames - TrueLightsAndDarkness Tweaks.ESP
+
+[Order]
+Balance - spells.esp
+BadDefaultSpells*.esp
+
+[Order]
+KS_Julan_Ashlander Companion_3.0_beta.esp
+Julan+TOTSP Patch.esp
+
+[Order]
+Privileges&Services.esp
+P&S -  No team jackets.esp
+P&S -  No team jackets - Dialogue edits.esp
+
+[Order]
+Restocking Alchemy Essentials.esp
+BTB's Game Improvements (Necro Edit).esp
+BTB's Game Improvements (Necro Edit) Tweaked.esp
+mwse_PoisonCrafting.esp
+Restocking Alchemy Essentials PoisonCrafting Patch.esp
+Realistic_Repair_Add-on.esp
+BTBGI Realistic Repair Add-on Patch.esp
+
+[Order]
+OAAB Creature Loot and Ingredients BTBGI Patch.ESP
+Yet Another Guard Diversity - Regular.ESP
+Complete and Revised Vanilla Equipment Integrated YAGD Patch.ESP
+OAAB Weapons Integrated YAGD Patch.ESP
+
+[Order]
+OAAB Weapons Integrated.ESP
+OAAB Weapons Integrated TB Patch.ESP
+
+[Order]
+BTB's Game Improvements (Necro Edit).ESP
+BTB's Game Improvements (Necro Edit) Tweaked.ESP
+OAAB Creature Loot.ESP
+OAAB Leveled Lists.ESP
+OAAB Ingredients.ESP
+
+[Conflict]
+ Choose only one plugin:
+  BTBGI Loot Patch.ESP
+  BTBGI Loot Patch - TCBOO.ESP - With There Can Be Only One
+BTBGI Loot Patch.ESP
+BTBGI Loot Patch - TCBOO.ESP
+
+[Conflict]
+ Choose only one plugin:
+  Weapons Integrated BTBGI Loot Patch.ESP - With OAAB Weapons Integrated and Oriental Ebony Weapons Integrated
+  Weapons Integrated BTBGI Loot Patch - TCBOO.ESP - With OAAB Weapons Integrated, Oriental Ebony Weapons Integrated, and There Can Be Only One
+Weapons Integrated BTBGI Loot Patch.ESP
+Weapons Integrated BTBGI Loot Patch - TCBOO.ESP
+
+[Order]
+Beautiful cities of Morrowind.ESP
+Nordic Dagon Fel.ESP
+
+[Order]
+Creatures_RP*.ESP
+New Ilunibi.ESP
+
+[Order]
+Creatures_RP*.ESP
+GN - RuinedRedaynia.ESP
+
+[Order]
+Creatures_RP*.ESP
+MarenMabrigash.ESP
+
+[Order]
+Creatures_RP*.ESP
+KogoruhnExpanded.esp
+
+[Order]
+RP_bandits.ESP
+The Grove of Ben'Abi.ESP
+
+[Order]
+CliffRacerNests&Eggs2.esp
+The Grove of Ben'Abi.ESP
