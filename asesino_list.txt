@@ -1,0 +1,68 @@
+
+;; 
+;; Custom Adds to mlox_user
+;;
+;; 
+;[Order]
+;Merged Objects.esp
+;multipatch.esp
+[Order]
+Lothavor's Legacy.esp
+Lothavor's Legacy BB addon.esp
+
+[NearStart]
+BTB's Game Improvements (Necro Edit).esp
+BTBGI Creature Buffs.esp
+BTBGI PFP Patch.esp
+
+[NearEnd]
+Constant Effect Clothing.esp
+
+
+[Order]
+Friends & Frens*.esp
+fargoths_mountain_hut.esp
+
+[Order] 
+REEEE.ESP
+REEEE-HelluvaMerchantContainers.ESP
+REEEE Constant ability.ESP
+Better Enchantments.esp
+Better Enchantments TR.esp
+
+[Order]
+MTC.esp
+Clean Fargoth_in_Distress_1.8.1.ESP
+FargothInDistressMTCPatch.ESP
+
+[Order]
+Entertainers Expanded.esp
+Entertainers Expanded Again.esp
+LGNPC_SeydaNeen.esp
+
+[Order]
+TR_Factions.esp
+higher faction requirements - Full - name Changed.ESP
+
+[Order]
+D2Items.esp
+Cutting Room Floor.esp
+Sris_Alchemy_BM.esp
+Enhanced Economics 2.1.esp
+LootWellUrned.ESP
+UrnOffering.ESP
+
+[Order]
+Buy A House.esp
+MAH.esp
+
+[Order]
+MW Containers Animated.esp
+adamantiumarmor.esp
+LeFemmArmor.esp
+
+[Order]
+Morrowind.esm
+Tribunal.esm
+Bloodmoon.esm
+Patch for Purists.esm
