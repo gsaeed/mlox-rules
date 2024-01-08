@@ -997,6 +997,10 @@ BCOM_pathgrid_reset.esp
 BCOM_Vanilla Trees.esp
 
 [Order]
+BCOM_pathgrid_reset.esp
+RP_Bustling_VIvec*.ESP
+
+[Order]
 Beautiful Cities of Morrowind.esp
 Mashed Lists.esp
 BCOM_pathgrid_reset.esp
@@ -1048,7 +1052,11 @@ BCOM_pathgrid_reset.esp
 BCoM_Imperial_Gaehouse_MoonMoth.esp
 
 [Order]
-Beautiful cities of Morrowind.esp
+BCOM_pathgrid_reset.esp
+BCoM_Marketplace_addon*.esp
+
+[Order]
+BCOM_pathgrid_reset.ESP
 BCoM_AldRuhn_Outdoor_Merchants.ESP
 
 [Order]
@@ -1058,6 +1066,18 @@ Beautiful cities of Morrowind.esp
 [Order]
 BCoM_WaterWorks.esp
 Balmora waterworks merchants addon.esp
+
+[Order]
+Beautiful cities of Morrowind.esp
+BCoM_IEO_patch.esp
+
+[Order]
+Beautiful cities of Morrowind.esp
+RP_Balmora_Guar_Stables.ESP
+
+[Order]
+BCoM_WaterWorks.ESP
+RP_Balmora_Guar_Stables.ESP
 
 ;; BCOM Conflicts
 
@@ -3090,6 +3110,13 @@ CCM-SecretsofVos-V2-TB.esp
 CCM-SecretsofVos-V2-TB - Script Fix.esp
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; @Census and Excise Office Faction [AliceL93]
+
+[Order] ; From Alvazir's Various Patches (MasssiveJuice)
+Census_and_Excise_Office_Faction.ESP
+Census_and_Excise_Office_Faction - Tamriel_Data Patch.esp
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @Concept Art Ordinators, @Indoril Spear [RandomPal]
 
 [Order]
@@ -4040,6 +4067,10 @@ LuceEdit - Guild of Vampire Hunters.esp
 [Order]
 NX9_StuddedArmor.esp
 Guild of Vampire Hunters.esp
+
+[Order]
+Guild of Vampire Hunters.esp
+Nar's Vampire Hunter Faction.esp
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @The Hammer of Orsinium [Terik Fel]
@@ -5888,6 +5919,10 @@ OAAB Brother Junipers Twin Lamps.esp
 OAAB Brother Junipers Twin Lamps.esp
 OAAB Brother Junipers Twin Lamps - Script Fix.esp
 
+[Order] ; From Alvazir's Various Patches (MasssiveJuice)
+OAAB Brother Junipers Twin Lamps.esp
+OAAB Brother Junipers Twin Lamps - Tamriel_Data Patch.esp
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @OAAB Grazelands [Melchior Dahrk]
 
@@ -6113,6 +6148,46 @@ PCD_Gnisis-Docks_Grandfather-Frost_CCM-Guard-Patrols.esp
 	'PCD_PFP_Compat.esp' is an ESP replacer, do not use it alongside the original plugin.
 persistent_corpse_disposal.esp
 PCD_PFP_Compat.esp
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; @Playable Game of Ur [Dillonn241]
+
+[Requires] ; Requires both assets and esp from The Royal Game of Ur (MasssiveJuice)
+Playable Game of Ur.esp
+The_Royal_Game_Of_Ur.esp
+
+[Order] ; (ref: Dillonn241 on Nexus mod page comments) (MasssiveJuice)
+The_Royal_Game_Of_Ur.esp
+Playable Game of Ur.esp
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; @Maar Gan - Town of Pilgrimage [RandomPal]
+[Order]
+RP_Maar_Gan.ESP
+RP_Maar_Gan_Ashlander_Addon.ESP
+
+[Order]
+RP_Maar_Gan.ESP
+The_magic_rock_of_Maar_Gan.ESP
+
+[Order]
+Beautiful cities of Morrowind.esp
+RP_Maar_Gan.ESP
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; @Ald'ruhn Architecture Variety [RandomPal]
+
+[Order]
+Beautiful cities of Morrowind.ESP
+RP_Ald'ruhn_Architecture_Variety.ESP
+
+[Order]
+BCoM_AldRuhn_Outdoor_Merchants.ESP
+RP_Ald'ruhn_Architecture_Variety.ESP
+
+[Order]
+RP_Ald'ruhn_Architecture_Variety.ESP
+RP_Ald'ruhn_The_Rat_In_The_Pot.ESP
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @Ports of Vvardenfell [Mick083]
@@ -8144,6 +8219,10 @@ VFWE_merged_objects_fix.esp
 VFWE_merged_objects_fix.ESP
 VFWE_The_Raven.ESP
 
+[Order] ; overwrites NPC record (MasssiveJuice)
+The_Fires_of_Orc.ESP
+VFWE - The Fires of Orc Patch.ESP
+
 [Conflict]
 	Already merged into or otherwise replicated by "Vanilla Friendly Wearables Expansion".
 Vanilla friendly wearables expansion.esm
@@ -8768,6 +8847,40 @@ RPNR_WHO_BCOM.esp
 [Order] ; prevents landscape tears in vanilla Sadrith Mora (yohannes)
 Shipyards of Vvardenfell.esp
 RPNR_WHO.esp
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; @Lore Accurate Arena&Skywind Style Arena [RandomPal and Vegetto]
+[Order]
+Beautiful cities of Morrowind.ESP
+RP_Arena_Backstage.ESP
+
+[Order]
+RP_Arena_Backstage.ESP
+BCoM_Arena*.ESP
+
+[Order]
+BCOM - Open Vivec Arena.esp
+BCoM_Arena*.ESP
+
+[Order]
+RP_Arena_Backstage.ESP
+Gladiator.esp
+
+[Order]
+Gladiator.esp
+BCoM_Arena*.ESP
+
+[Order]
+Beautiful cities of Morrowind.ESP
+RPNR_Skywind_Style_Arena.esp
+
+[Order]
+RPNR_Skywind_Style_Arena.esp
+BCoM_Arena*.ESP
+
+[Order]
+RPNR_Skywind_Style_Arena.esp
+Gladiator.esp
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @The Wrath of God - Vivec Boss Fight Overhaul, @Wrath of God [ffann1998]
