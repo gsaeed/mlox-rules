@@ -323,7 +323,7 @@ Animated_Morrowind*.esp
 
 [Conflict]
 	'Animated Morrowind - Danae's Edits' includes fixes for 'Animated Morrowind - merged' but removes a few npcs that conflict with other mods (including BCoM). Pick one.
-Animated_Morrowind - merged.esp
+Animated_Morrowind - merged*.esp
 Animated_Morrowind - Danaes Edits.esp
 
 [Conflict]
@@ -953,8 +953,20 @@ Scrolls of The Nine Barriers.esp
 BCOM_Scrolls of the Nine Barriers_patch.esp
 
 [Order]
+Beautiful cities of Morrowind.esp
+BCoM_logs_on_fire.ESP
+
+[Order]
 BCOM Rocky West Gash.esp
 Beautiful cities of Morrowind.esp
+
+[Order]
+BCOM_pathgrid_reset.ESP
+BCoM_FQ_Bridges.esp
+
+[Order]
+BCoM_FQ_Bridges.esp
+BCoM_FQ_Bridges_Open_Arena_Pathgrid.esp
 
 [Order]
 BCOM_pathgrid_reset.esp
@@ -978,6 +990,10 @@ BCOM - Open Vivec Arena.esp
 
 [Order]
 BCOM_pathgrid_reset.esp
+BCOM - Open Vivec Arena_Skywind.esp
+
+[Order]
+BCOM_pathgrid_reset.esp
 BCOM - Taller Lighthouse.esp
 
 [Order]
@@ -994,7 +1010,7 @@ BCOM_suran underworld_expansion patch.esp
 
 [Order]
 BCOM_pathgrid_reset.esp
-BCOM_Vanilla Trees.esp
+BCOM_Vanilla Trees*.esp
 
 [Order]
 BCOM_pathgrid_reset.esp
@@ -1002,10 +1018,21 @@ RP_Bustling_VIvec*.ESP
 
 [Order]
 Beautiful Cities of Morrowind.esp
+BCOM - Open Vivec Arena_Skywind_FPS_Version.esp
+
+[Order]
+Beautiful Cities of Morrowind.esp
 Mashed Lists.esp
 BCOM_pathgrid_reset.esp
 Interior exterior flag reset.esp
 BCOM_OpenMW_plazas.esp
+
+[Order]
+Beautiful Cities of Morrowind.esp
+BCOM_pathgrid_reset.esp
+Interior exterior flag reset.esp
+BCOM_OpenMW_plazas.esp
+Interior exterior flag reset_Skywind_Arena.ESP
 
 [Order] ; rule for replacer maintained by ActuallyUlysses here: https://www.nexusmods.com/morrowind/mods/52726
 Beautiful cities of Morrowind.esp
@@ -1079,7 +1106,16 @@ RP_Balmora_Guar_Stables.ESP
 BCoM_WaterWorks.ESP
 RP_Balmora_Guar_Stables.ESP
 
+[Order]
+Beautiful cities of Morrowind.esp
+Melodies and Moonlight.esp
+
 ;; BCOM Conflicts
+
+[Conflict]
+	Already merged into BCoM.
+Beautiful cities of Morrowind.ESP
+RP_Arena_Backstage.ESP
 
 [Conflict]
 	'BCOM Rocky West Gash.esp' is an ESP replacer, do not use it alongside the original plugin.
@@ -1303,6 +1339,10 @@ BTB's Game Improvements (Necro Edit) Tweaked.esp
 Mashed Lists.esp
 Merged Objects PfP BTBGI Fix.esp
 
+[Order]
+Merged Objects.esp
+Merged Objects PfP BTBGI Fix.esp
+
 ;; Poison Crafting
 
 [Order]
@@ -1356,6 +1396,10 @@ BTBGI Tribunal Rebalance Patch.esp
 [Order]
 Tribunal Rebalance.esp
 BTBGI Tribunal Rebalance Patch.esp
+
+[Order] ; Patch is part of the popular mod list morrowindsharp. Not available on Nexus (yohannes)
+Tribunal Rebalance.esp
+Tribunal Rebalance Gedna Script Fix and Goblin Potion Rebalance.esp
 
 ;; Beware the Sixth House
 [Patch]
@@ -1431,6 +1475,10 @@ BTBGI RV Armors Integrated Patch.esp
 Mashed Lists.esp
 Merged Objects RV Armors BTBGI Fix.esp
 
+[Order]
+Merged Objects.esp
+Merged Objects RV Armors BTBGI Fix.esp
+
 [Patch]
 	A patch for "BTB's Game Improvements (Necro Edit) Tweaked" and "Oriental Ebony Weapons" is provided in the "BTB's Game Improvements (Necro Edit) Tweaked" archive.
 BTBGI Oriental Ebony Weapons Integrated Patch.esp
@@ -1458,6 +1506,10 @@ BTBGI OAAB Weapons Integrated Patch.esp
 
 [Order]
 Mashed Lists.esp
+Merged Objects OAAB Weapons BTBGI Fix.esp
+
+[Order]
+Merged Objects.esp
 Merged Objects OAAB Weapons BTBGI Fix.esp
 
 [Patch]
@@ -1520,6 +1572,11 @@ BTBGI AndranoTombRemastered Patch.esp
 ;; BTBGI Loot Patch
 [Order] ; ( Ref: 'BTBGI Loot Patch Readme.txt' ) (Pharis)
 Mashed Lists.esp
+BTBGI Loot Patch*.esp
+
+;; BTBGI Loot Patch
+[Order] ; ( Ref: 'BTBGI Loot Patch Readme.txt' ) (Pharis)
+Merged Objects.esp
 BTBGI Loot Patch*.esp
 
 [Conflict]
@@ -4434,7 +4491,7 @@ Indoril_armor - TR.esp
 [Order]
 The_Fires_of_Orc.ESP
 IO - Cultists.esp
-IO - The Fires of Orc Patch.ESP
+IO - Fires of Orc Patch.ESP
 
 [Order]
 Daedric Shrine Overhaul Malacath.ESP
@@ -4455,7 +4512,7 @@ IO - Cultists.esp
 [Patch]
 	A patch for "Interesting Outfits - Cultists" and "The Fires of Orc" is provided on the "Interesting Outfits - Cultists" mod page.
 	[Patch Download]( https://www.nexusmods.com/morrowind/mods/51922 )
-IO - The Fires of Orc Patch.ESP
+IO - Fires of Orc Patch.ESP
 [ALL	The_Fires_of_Orc.ESP
 		IO - Cultists.esp]
 
@@ -5261,15 +5318,30 @@ MDMD - More Deadly Morrowind Denizens.esp
 
 [Order] ; To keep MDMD's changes to Sorkvild, TES3Merge will fix other conflicts ( Ref: I checked in TES3View because someone asked ) (Pharis)
 The Raven 1.5.4.esp
-MDMD*.esp
+MDMD - More Deadly Morrowind Denizens.esp
 
-;[Order] ; ( Ref: MDMD Readme ) (Pharis)
-;Morrowind Anti-Cheese.esp
-;MDMD*.esp
+[Order] ; To keep MDMD's changes to Sorkvild, TES3Merge will fix other conflicts ( Ref: I checked in TES3View because someone asked ) (Pharis)
+The Raven 1.5.4.esp
+MDMD - Bosses Only.esp
 
-;[Order] ; ( Ref: MDMD Readme ) (Pharis)
-;Morrowind Anti-Cheese Tweaked.esp
-;MDMD*.esp
+;; Morrowind Anti-Cheese
+; Putting main MDMD plugin after Anti-Cheese will also put the Creatures Add-On and Uvirith's Legacy plugins after it so no need for more rules here
+; Stupid interaction with BTBGI rules
+; [Order] ; ( Ref: MDMD Readme ) (Pharis)
+; Morrowind Anti-Cheese.esp
+; MDMD - More Deadly Morrowind Denizens.esp
+;
+; [Order]
+; Morrowind Anti-Cheese.esp
+; MDMD - Bosses Only.esp
+;
+; [Order] ; ( Ref: MDMD Readme ) (Pharis)
+; Morrowind Anti-Cheese Tweaked.esp
+; MDMD - More Deadly Morrowind Denizens.esp
+;
+; [Order]
+; Morrowind Anti-Cheese Tweaked.esp
+; MDMD - Bosses Only.esp
 
 ;; Uvirith's Legacy Patch
 ; Overwrites NPC records for Gothren and Sorkvild, needs to be after both plugins ( and after 'The Raven 1.5.4.esp' but that is covered by another rule ) (Pharis)
@@ -5763,6 +5835,10 @@ OAAB Weapons Integrated TCBOO.esp
 Mashed Lists.esp
 OAAB Weapons and Oriental Ebony Weapons Integrated Patch TCBOO.esp
 
+[Order]
+Merged Objects.esp
+OAAB Weapons and Oriental Ebony Weapons Integrated Patch TCBOO.esp
+
 ;; Redoran War and Sathil Mercenary Armor Integrated
 [Conflict]
 	'Redoran War and Sathil Mercenary Armor.esp' should be disabled.
@@ -5853,29 +5929,14 @@ Moonmoth Legion Fort Overhaul.esp
 OAAB - Shipwrecks.esp
 OAAB - Shipwrecks - TR Patch.esp
 
-[Order] ; Updated load order per Justice for Khartag update 03-Oct-23 (MasssiveJuice)
-OAAB - Shipwrecks.esp
+[Order] ; Updated load order per OAAB Shipwrecks Update 22/01/2024 (yohannes)
 Justice4Khartag.esp
-KFG_Shipwrecks_Patch.ESP
+OAAB - Shipwrecks.esp
 
-[Patch] ; OAAB Shipwrecks and Justice for Khartag patch (MasssiveJuice)
-	"Justice for Khartag" includes a compatibility patch for "OAAB Shipwrecks" as a separate plugin
-KFG_Shipwrecks_Patch.ESP
-[ALL	OAAB - Shipwrecks.esp
-		Justice4Khartag.esp]
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; @OAAB Shipwrecks and Justice for Khartag - merged plugin [Corsair, Vegetto, ffann1998]
-
-[Conflict]
-	"OAAB Shipwrecks and Justice for Khartag - merged plugin" includes both "OAAB Shipwrecks" and "Justice for Khartag (J.F.K.)" and should not be used alongside the original plugins.
-Justice4Khartag+OAAB_Shipwreck - merged.esp
-[ANY	OAAB - Shipwrecks.esp
-		Justice4Khartag.esp]
-
-[Order] ; Original mod's TR patch prob still necessary (Zilophos)
-Justice4Khartag+OAAB_Shipwreck - merged.esp
-OAAB - Shipwrecks - TR Patch.esp
+[Note] ; OAAB Shipwrecks update removed need for J4K patch (yohannes)
+	As of update 1.7.8, "OAAB - Shipwrecks" and "Justice for Karthag" are compatible without using a patch.
+[ANY	KFG_Shipwrecks_Patch.ESP
+		Justice4Khartag+OAAB_Shipwreck - merged.esp]
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @OAAB - The Ashen Divide [Remiros]
@@ -6604,6 +6665,14 @@ RepopulatedMorrowind_ImmersiveMournhold.ESP
 [ALL	RepopulatedMorrowind.ESM
 		Immersive Mournhold.esp]
 
+[Order]
+Immersive Mournhold.esp
+RepopulatedMorrowind_ImmersiveMournhold.ESP
+
+[Order]
+RepopulatedMorrowind.ESM
+RepopulatedMorrowind_ImmersiveMournhold.ESP
+
 ;; Indoril Ronin
 [Requires] ; Adds items to RM levelled lists
 RepopulatedMorrowind_IndorilRoninArmor.esp
@@ -7061,6 +7130,26 @@ Save the Date - MQO Patch.esp
 [Order]
 Vvardenfell Brotherhood.esp
 Save the Date.esp
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; @Secret of Vilmuhn, @SoV [MasssiveJuice, GrumblingVomit]
+
+[Order] ; (Reference: MasssiveJuice)
+OAAB_Data.esm
+SecretOfVilmuhn.esm
+
+[Order] ; (Reference: MasssiveJuice)
+Tamriel_Data.esm
+SecretOfVilmuhn.esm
+
+[Order] ; (Reference: MasssiveJuice)
+TR_Mainland.esm
+SecretOfVilmuhn.esm
+
+[Conflict] ; (Reference: MasssiveJuice)
+	'Last Wish' by Tel Shadow conflicts with SoV as the landmasses overlap
+SecretOfVilmuhn.esm
+Last Wish 2.0.esp
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @Secrets of the Crystal City [JettN77, Melchior Dahrk, Peter/Halovarium, seelof]
@@ -7840,41 +7929,6 @@ BCOM+GhastlyGG+DynamicDistantBuildingsPatch.esp
 Beautiful cities of Morrowind.esp
 BCOM+GhastlyGG+DynamicDistantBuildingsPatch.esp
 
-;; OAABShipwrecks + RRBetterShipsnBoats Patch
-[Requires]
-OAABShipwrecks+RRBetterShipsnBoatsPatch.esp
-[ALL	OAAB - Shipwrecks.esp
-		RR_Better_Ships_n_Boats_Eng.esp]
-
-[Order] ; ( ref: readme ) (yohannes)
-OAAB - Shipwrecks.esp
-RR_Better_Ships_n_Boats_Eng.esp
-
-[Order] ; ( ref: readme ) (yohannes)
-OAAB - Shipwrecks.esp
-OAABShipwrecks+RRBetterShipsnBoatsPatch.esp
-
-[Order] ; ( ref: readme ) (yohannes)
-RR_Better_Ships_n_Boats_Eng.esp
-OAABShipwrecks+RRBetterShipsnBoatsPatch.esp
-
-[Requires]
-JFK+OAABShipwrecks+RRBetterShipsnBoatsPatch.esp
-[ALL	Justice4Khartag+OAAB_Shipwreck - merged.esp
-		RR_Better_Ships_n_Boats_Eng.esp]
-
-[Order] ; ( ref: readme ) (yohannes)
-Justice4Khartag+OAAB_Shipwreck - merged.esp
-RR_Better_Ships_n_Boats_Eng.esp
-
-[Order] ; ( ref: readme ) (yohannes)
-Justice4Khartag+OAAB_Shipwreck - merged.esp
-JFK+OAABShipwrecks+RRBetterShipsnBoatsPatch.esp
-
-[Order] ; ( ref: readme ) (yohannes)
-RR_Better_Ships_n_Boats_Eng.esp
-JFK+OAABShipwrecks+RRBetterShipsnBoatsPatch.esp
-
 ;; NordicDagonFel + RRBetterShipsnBoats Patch
 [Requires]
 NordicDagonFel+RRBetterShipsnBoatsPatch.esp
@@ -8423,12 +8477,13 @@ Solstheim Tomb of The Snow Prince.esm
 [Order] ; Dependency (Pharis)
 Wares-base.esm
 F&F_base.esm
+Friends_and_Foes_base.esm
 Friends & Frens - base.esm
 Westly Prim & Proper Core.esm
 
-[Note]
-	!! You are using an old and unsupported version of 'Wares-base.esm' (that may have been bundled with another mod), this will cause issues with the new "Wares" plugins.
-[DESC !/Adds vanilla items to Wares lists/ Wares-base.esm]
+;[Note]
+;	!! You are using an old and unsupported version of 'Wares-base.esm' (that may have been bundled with another mod), this will cause issues with the new "Wares" plugins.
+;[DESC !/Adds vanilla items to Wares lists/ Wares-base.esm]
 
 [Order]
 Wares*.esp
@@ -8458,10 +8513,14 @@ F&F_heads_*.esp
 
 [Order] ; Personal rule can be added to override but this is how most would use it (Pharis)
 F&F_TR.esp
+F&F_Mainland.ESP
 F&F_heads_Westly.esp
+F&F_Prim&Proper.esp
 
 [Order]
 Merged Objects.esp
+F&F_No_Hostiles.ESP
+F&F_No_Towns.ESP
 F&F_scarce.esp
 F&F_MOAR.esp
 F&F_No_Sitters.ESP
@@ -8536,12 +8595,13 @@ Wares-MOAR.esp
 Wares-even-MOAR.esp
 
 [Conflict] ; (Ref: https://www.nexusmods.com/morrowind/mods/49251? )
-	"Friends and Foes" includes and expands on "CM_Partners", "Outlaws", "Starfire's npcs" and "MCA".
-F&F_base.esm
+	"Friends and Foes" includes and expands on "CM_Partners", "Outlaws", "Starfire's npcs" and "MCA". F&F_base.esm is an older version of Friends and Foes
+Friends_and_Foes_base.esm
 [ANY	CM_Partners_*.esp
 		Outlaws.esp
 		OutlawsTR.esp
 		Starfires*.esp
+		F&F_base.esm
 		MCA*.esp]
 
 [Conflict] ; (Ref: https://www.nexusmods.com/morrowind/mods/49251? )
@@ -8850,36 +8910,13 @@ RPNR_WHO.esp
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @Lore Accurate Arena&Skywind Style Arena [RandomPal and Vegetto]
-[Order]
-Beautiful cities of Morrowind.ESP
-RP_Arena_Backstage.ESP
-
-[Order]
-RP_Arena_Backstage.ESP
-BCoM_Arena*.ESP
-
-[Order]
-BCOM - Open Vivec Arena.esp
-BCoM_Arena*.ESP
 
 [Order]
 RP_Arena_Backstage.ESP
 Gladiator.esp
 
 [Order]
-Gladiator.esp
-BCoM_Arena*.ESP
-
-[Order]
-Beautiful cities of Morrowind.ESP
-RPNR_Skywind_Style_Arena.esp
-
-[Order]
-RPNR_Skywind_Style_Arena.esp
-BCoM_Arena*.ESP
-
-[Order]
-RPNR_Skywind_Style_Arena.esp
+RPNR_Skywind_Style_Arena*.esp
 Gladiator.esp
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
