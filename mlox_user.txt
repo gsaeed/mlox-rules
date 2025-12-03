@@ -408,6 +408,13 @@ Area Effect Projectiles Integrated.esp
 Area Effect Projectiles Integrated (PAR Edit).esp
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; @Arvesa - An Armiger's Tale [Masterofchim]
+
+[Order] ; Prevents error while plugins are loading (yohannes)
+Arvesa - An Armigers Tale.ESP
+Arvesa - Tamriel Rebuilt.ESP
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @Arvs-Spelun [Stavroguin]
 
 [Order] ; Prevents Arvs-Spelun entrance from being hidden below terrain (Pharis)
@@ -1182,8 +1189,8 @@ Beautiful cities of Morrowind.esp
 [Note] ; replacer maintained by ActuallyUlysses (MassiveJuice)
 	Original "Balmora Docks" is not compatible with "Beautiful Cities of Morrowind". Use replacer made by ActuallyUlysses
 	[Replacer Download]( https://www.nexusmods.com/morrowind/mods/52726 )
-Beautiful cities of Morrowind.esp
-BalmoraDocks.esp
+[ALL	Beautiful cities of Morrowind.esp
+		BalmoraDocks.esp]
 
 [Conflict]
 	Already merged into or otherwise replicated by "Beautiful cities of Morrowind".
@@ -4290,8 +4297,8 @@ LGNPC__merged.esp
 CultSheog.esp
 CultSheog-TR1912.esp
 
-[Order]
-MDMD*.esp
+[Order] ; Conflicts with various NPC records of the cult members
+MDMD - More Deadly Morrowind Denizens.esp
 CultSheog.esp
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -5173,8 +5180,8 @@ MC-Ashen.esp
 
 [NOTE]
 	Make sure you use the esp replacer provided on the Clean Mines and Caverns nexus page under optional files! 
-Mines & Caverns.esp
-OAAB - The Ashen Divide.esp 
+[ALL	Mines & Caverns.esp
+		OAAB - The Ashen Divide.esp]
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @Miner's Pick Requirement for Ore Mining [TheDrunkenMudcrab]
@@ -5307,13 +5314,6 @@ Morag Tong Polished - TR_Factions - EcoAdjCrime_NE.esp
 Heins Morag Tong Armor.esp
 Morag Tong Polished.esp
 
-[Patch] ; Moves a misplaced NPC if using "Morag Tong Polished" with "BCOM" (MasssiveJuice)
-	A patch for "Morag Tong Polished" and "BCOM" is available from "Beyond's Various Patches" and also works with the "VFWE" version of "Morag Tong Polished".
-	[Patch Download]( https://www.nexusmods.com/morrowind/mods/51194 )
-Morag Tong Polished - BCoM Patch.ESP
-[ALL	Morag Tong Polished.esp
-		Beautiful cities of Morrowind.ESP]
-
 [Order] ; ( ref: https://www.nexusmods.com/morrowind/mods/51194 ) (MasssiveJuice)
 Morag Tong Polished.esp
 Morag Tong Polished - BCoM Patch.ESP
@@ -5328,11 +5328,11 @@ Better Enchantments.esp
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @More Deadly Morrowind Denizens, @MDMD [AutumnBramble]
 
-[Order] ; Conflict with one creature, addon should probably win that (Pharis)
+[Order] ; Conflict with one creature, addon should probably win that
 MDMD - More Deadly Morrowind Denizens.esp
 MDMD - Creatures Add-On.esp
 
-[Order] ; ( Ref: https://www.nexusmods.com/morrowind/mods/47129?tab=docs ) (Pharis)
+[Order] ; ( Ref: https://www.nexusmods.com/morrowind/mods/47129?tab=docs )
 Expansions Integrated.esp
 MDMD - More Deadly Morrowind Denizens.esp
 
@@ -5369,42 +5369,102 @@ MDMD - More Deadly Morrowind Denizens.esp
 Gavrilo93*.esp
 MDMD - More Deadly Morrowind Denizens.esp
 
+;; Economy Adjuster
+
+; EcoAdj(Sri+Ingredients).esp and EcoAdjDaedricDrops.esp both conflict
+; with MDMD plugins on creature records but those conflicts are best left
+; to a merged plugin
+
+; Not sure where this plugin is from. If it is just a simple merge these rules are not needed
 [Order]
-MDMD*.esp
+MDMD - More Deadly Morrowind Denizens.esp
+MDMD - Creatures Add-On.esp
 EcoAdj5mMerged.esp
 
 [Order]
-MDMD*.esp
-JoinAllHouses*.esp
+MDMD - Bosses Only.esp
+EcoAdj5mMerged.esp
+
+;; Join All Houses
+
+; Conflict with Vedam Dren NPC record
+; allhouse.esp is v1.1 of Join All Houses from MMH
 
 [Order]
-MDMD*.esp
+MDMD - More Deadly Morrowind Denizens.esp
+Join All Houses.esp
+
+[Order]
+MDMD - More Deadly Morrowind Denizens.esp
+allhouse.esp
+
+[Order]
+MDMD - Bosses Only.esp
+Join All Houses.esp
+
+[Order]
+MDMD - Bosses Only.esp
+allhouse.esp
+
+;; Tales of Ald Velothi
+
+[Order] ; Conflict on single NPC record for Gordol. Unsure if necessary
+MDMD - More Deadly Morrowind Denizens.esp
 Tales of Ald Velothi.esp
 
 [Order]
-MDMD*.esp
+MDMD - Bosses Only.esp
+Tales of Ald Velothi.esp
+
+;; To Serve Sithis
+
+; Conflicts with various NPC records. Needs a check to see whether any explicit ordering is actually needed
+[Order]
+MDMD - More Deadly Morrowind Denizens.esp
 To Serve Sithis.esp
 
 [Order]
-MDMD*.esp
+MDMD - Bosses Only.esp
+To Serve Sithis.esp
+
+; Badly named version of "To Serve Sithis" on the Nexus
+[Order]
+MDMD - More Deadly Morrowind Denizens.esp
+Clean To Serve Sithis_.esp
+
+[Order]
+MDMD - Bosses Only.esp
+Clean To Serve Sithis_.esp
+
+[Order]
+MDMD - More Deadly Morrowind Denizens.esp
+MDMD - Creatures Add-On.esp
+LGNPC*merged.esp
+
+[Order]
+MDMD - Bosses Only.esp
 LGNPC*merged.esp
 
 [Order]
 DN-GDR-MRMlite.esp
 MDMD - More Deadly Morrowind Denizens.esp
 
-[Order] ; To keep MDMD's changes to Sorkvild, TES3Merge will fix other conflicts ( Ref: I checked in TES3View because someone asked ) (Pharis)
+; To keep MDMD's changes to Sorkvild, TES3Merge will fix other conflicts
+; ( Ref: I checked in TES3View because someone asked )
+[Order]
 The Raven 1.5.4.esp
 MDMD - More Deadly Morrowind Denizens.esp
 
-[Order] ; To keep MDMD's changes to Sorkvild, TES3Merge will fix other conflicts ( Ref: I checked in TES3View because someone asked ) (Pharis)
+[Order]
 The Raven 1.5.4.esp
 MDMD - Bosses Only.esp
 
 ;; Morrowind Anti-Cheese
-; Putting main MDMD plugin after Anti-Cheese will also put the Creatures Add-On and Uvirith's Legacy plugins after it so no need for more rules here
+
+; Putting main MDMD plugin after Anti-Cheese will also put the Creatures Add-On
+; and Uvirith's Legacy plugins after it so no need for more rules here
 ; Stupid interaction with BTBGI rules
-; [Order] ; ( Ref: MDMD Readme ) (Pharis)
+; [Order] ; ( Ref: MDMD Readme )
 ; Morrowind Anti-Cheese.esp
 ; MDMD - More Deadly Morrowind Denizens.esp
 ;
@@ -5412,7 +5472,7 @@ MDMD - Bosses Only.esp
 ; Morrowind Anti-Cheese.esp
 ; MDMD - Bosses Only.esp
 ;
-; [Order] ; ( Ref: MDMD Readme ) (Pharis)
+; [Order] ; ( Ref: MDMD Readme )
 ; Morrowind Anti-Cheese Tweaked.esp
 ; MDMD - More Deadly Morrowind Denizens.esp
 ;
@@ -5421,7 +5481,9 @@ MDMD - Bosses Only.esp
 ; MDMD - Bosses Only.esp
 
 ;; Uvirith's Legacy Patch
-; Overwrites NPC records for Gothren and Sorkvild, needs to be after both plugins ( and after 'The Raven 1.5.4.esp' but that is covered by another rule ) (Pharis)
+
+; Overwrites NPC records for Gothren and Sorkvild, needs to be after both plugins
+; ( and after 'The Raven 1.5.4.esp' but that is covered by another rule )
 [Order]
 MDMD - More Deadly Morrowind Denizens.esp
 mdmd - uvirith legacy cooperation.esp
@@ -6128,9 +6190,8 @@ OAAB_Saplings BCOM patch.esp
 Beautiful cities of Morrowind.ESP
 
 [Requires] ; (ref: MassiveJuice)
-OAAB_Saplings Concept Art Plantations BCOM patch.ESP
-[ALL	Beautiful cities of Morrowind.ESP
-	Concept_Arts_plantations.esp]
+OAAB_Saplings Concept Arts plantations patch.ESP
+Concept_Arts_plantations.esp
 
 [Requires] ; (ref: MassiveJuice)
 OAAB_Saplings Great Seawall of Vivec patch.esp
@@ -7292,10 +7353,24 @@ SecretOfVilmuhn.esm
 TR_Mainland.esm
 SecretOfVilmuhn.esm
 
+[Order] ; (Reference: MasssiveJuice)
+SOV_Data.esm
+SecretOfVilmuhn.esm
+
 [Conflict] ; (Reference: MasssiveJuice)
 	'Last Wish' by Tel Shadow conflicts with SoV as the landmasses overlap
 SecretOfVilmuhn.esm
 Last Wish 2.0.esp
+
+;; SOV_Data
+
+[Order] ; (Reference: MasssiveJuice)
+OAAB_Data.esm
+SOV_Data.esm
+
+[Order] ; (Reference: MasssiveJuice)
+Tamriel_Data.esm
+SOV_Data.esm
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @Secrets of the Crystal City [JettN77, Melchior Dahrk, Peter/Halovarium, seelof]
@@ -8080,36 +8155,36 @@ DraggleTailPriceAdjustment.esp
 [Requires]
 AFFresh+SamarysAncestralTombExpanded.esp
 [ALL	Samarys Ancestral Tomb Expanded.esp
-		AFFresh.esp]
+		AFFresh.esm]
 
 [Order] ; ( ref: readme provided on https://modding-openmw.gitlab.io/momw-patches/ ) (yohannes)
 Samarys Ancestral Tomb Expanded.esp
-AFFresh.esp
+AFFresh.esm
 
 [Order]
 Samarys Ancestral Tomb Expanded.esp
 AFFresh+SamarysAncestralTombExpanded.esp
 
 [Order]
-AFFresh.esp
+AFFresh.esm
 AFFresh+SamarysAncestralTombExpanded.esp
 
 ;; AFFresh and Caldera Mine Expanded Patch
 [Requires]
 AFFresh+CalderaMineExpanded.esp
 [ALL	DD_Caldera_Expansion.esp
-	AFFresh.esp]
+	AFFresh.esm]
 
 [Order] ; ( ref: readme provided on https://modding-openmw.gitlab.io/momw-patches/ ) (yohannes)
 DD_Caldera_Expansion.esp
-AFFresh.esp
+AFFresh.esm
 
 [Order]
 DD_Caldera_Expansion.esp
 AFFresh+CalderaMineExpanded.esp
 
 [Order]
-AFFresh.esp
+AFFresh.esm
 AFFresh+CalderaMineExpanded.esp
 
 ;; Ebonheart Underworks MOMW Patch
@@ -8126,14 +8201,14 @@ MamaeaAwakenedOpenMWPatch.esp
 [Requires]
 AFFresh+BCOM.esp
 [ALL	Beautiful cities of Morrowind.esp
-		AFFresh.esp]
+		AFFresh.esm]
 
 [Order] ; ( ref: readme provided on https://modding-openmw.gitlab.io/momw-patches/ ) (yohannes)
-AFFresh.esp
+AFFresh.esm
 Beautiful cities of Morrowind.esp
 
 [Order]
-AFFresh.esp
+AFFresh.esm
 AFFresh+BCOM.esp
 
 [Order]
@@ -8203,15 +8278,15 @@ UL_-_OAAB_Tel_Mora_Patch.esp
 ;; AFFresh and Adanumuran Reclaimed Patch
 [Requires]
 AFFresh+AdanumuranReclaimedPatch.esp
-[All	AFFresh.esp
+[All	AFFresh.esm
 		Adanumuran Reclaimed.esp]
 
 [Order] ; ( ref: readme provided on https://modding-openmw.gitlab.io/momw-patches/ ) (yohannes)
-AFFresh.esp
+AFFresh.esm
 Adanumuran Reclaimed.esp
 
 [Order]
-AFFresh.esp
+AFFresh.esm
 AFFresh+AdanumuranReclaimedPatch.esp
 
 [Order]
@@ -8251,15 +8326,15 @@ UL_3.5_OpenMW_1.3_Add-on.esp
 ;; AFFresh and Library of Vivec Enhanced Patch
 [Requires]
 AFFreshLibraryOfVivecEnhanced.esp
-[ALL	AFFresh.esp
+[ALL	AFFresh.esm
 		RPNR_Library.esp]
 
 [Order] ; (ref: readme) (yohannes)
-AFFresh.esp
+AFFresh.esm
 AFFreshLibraryOfVivecEnhanced.esp
 
 [Order]
-AFFresh.esp
+AFFresh.esm
 RPNR_Library.esp
 
 [Order]
@@ -8960,20 +9035,22 @@ Wares-MOAR.esp
 Wares-even-MOAR.esp
 
 [Conflict] ; (Ref: https://www.nexusmods.com/morrowind/mods/49251? )
-	"Friends and Foes" includes and expands on "CM_Partners", "Outlaws", "Starfire's npcs" and "MCA". F&F_base.esm is an older version of Friends and Foes
+	"Friends and Foes" includes and expands on "CM_Partners", "Outlaws", "Starfire's npcs" and "MCA". F&F_base.esm is an older version of Friends and Foes.
 Friends_and_Foes_base.esm
-[ANY	CM_Partners_*.esp
+[ANY	CM_Partners_<VER>.esp
 		Outlaws.esp
 		OutlawsTR.esp
-		Starfires*.esp
+		Starfires NPC Additions ver-<VER>.esp
 		F&F_base.esm
-		MCA*.esp]
+		MCA.esm
+		Morrowind Comes Alive.esm]
 
 [Conflict] ; (Ref: https://www.nexusmods.com/morrowind/mods/49251? )
-	"Friends and Frens" includes and expands on companions from "CM_Partners""MCA".
+	"Friends and Frens" includes and expands on companions from "CM_Partners" and "MCA".
 Friends & Frens - base.esm
-[ANY	CM_Partners_*.esp
-		MCA*.esp]
+[ANY	CM_Partners_<VER>.esp
+		MCA.esm
+		Morrowind Comes Alive.esm]
 
 [Conflict]
 	Use only one of these plugins:
@@ -10165,3 +10242,19 @@ Quest Tweaks and Alternatives_<VER>.esp
 [Order] ; otherwise Nordic Fur Cuirass mesh gets overwritten by vanilla cuirass for males and females (MasssiveJuice)
 Alex's Better Fitted Female Armors.ESP
 Clean_Nordic Fur Armour Replacer Symph.esp
+
+; Even More Illuminated Order Improved Fixes by Lucevar and Ronik (codering)
+[Order]
+Illuminated Order Improved.ESP
+Beautiful cities of morrowind.esp
+IlluminatedOrder_BCoM_patch.ESP
+
+[Order]
+Illuminated Order Improved.ESP
+OAAB - Tombs and Towers.ESP
+IlluminatedOrder_OAABTombsandTowers_patch.ESP
+
+[Order]
+Illuminated Order Improved.ESP
+SecretsOfTheCrystalCity.esp
+IlluminatedOrder_SecretsoftheCrystalCity_patch.ESP
