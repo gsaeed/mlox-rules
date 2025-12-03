@@ -66,3 +66,9 @@ Morrowind.esm
 Tribunal.esm
 Bloodmoon.esm
 Patch for Purists.esm
+
+[Order]
+Tamriel_Data.esm
+Friends_and_Foes_base.esm
+Friends & Frens - base.esm
+
