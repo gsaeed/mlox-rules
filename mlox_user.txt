@@ -5325,6 +5325,15 @@ Morag Tong Polished - BCoM Patch.ESP
 [Order]
 Morag Tong Polished.esp
 Better Enchantments.esp
+
+[Order]
+Stav_WebofMephala.ESP
+Morag Tong Polished.esp
+
+[Order]
+Morag Tong Polished.esp
+VB - MTP Integration Patch.ESP
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @More Deadly Morrowind Denizens, @MDMD [AutumnBramble]
 
@@ -7026,6 +7035,20 @@ Reputation_Fixes_All.esp
 
 ;; Alvazir's Various Patches Reputation Fixes Patches
 
+;; (Ref: Reputation Fixes - Patch-48955-1-0-0-1668952952.7z/Docs/Readme.txt )
+[Patch] ; Persistent Corpse Disposal
+ Patch available at alvazir's Various Patches ( https://www.nexusmods.com/morrowind/mods/48955 ): "Reputation Fixes - Patches"
+[ANY RF-Persistent_Corpse_Disposal.esp
+     RF-PCD-Imperial_Legion_Expansion.esp
+     RF-PCD-Mournhold_Courtiers.esp
+     RF-PCD-Creeping_Blight.esp
+     RF-PCD-Imperial_Legion_Expansion-Mournhold_Courtiers.esp
+     RF-PCD-Imperial_Legion_Expansion-Creeping_Blight.esp
+     RF-PCD-Mournhold_Courtiers-Creeping_Blight.esp
+     RF-PCD-Imperial_Legion_Expansion-Mournhold_Courtiers-Creeping_Blight.esp]
+[ALL Reputation_Fixes_All.esp
+     persistent_corpse_disposal.esp]
+
 [Order] ; Persistent Corpse Disposal
 Reputation_Fixes_All.ESP
 RF-Persistent_Corpse_Disposal.esp
@@ -7038,6 +7061,20 @@ RF-Persistent_Corpse_Disposal.esp
 persistent_corpse_disposal.esp
 RF-Persistent_Corpse_Disposal.esp
 
+;; (Ref: Reputation Fixes - Patch-48955-1-0-0-1668952952.7z/Docs/Readme.txt )
+[Patch] ; Imperial Legion Expansion
+ Patch available at alvazir's Various Patches ( https://www.nexusmods.com/morrowind/mods/48955 ): "Reputation Fixes - Patches"
+[ANY RF-Imperial_Legion_Expansion.esp
+     RF-PCD-Imperial_Legion_Expansion.esp
+     RF-Imperial_Legion_Expansion-Mournhold_Courtiers.esp
+     RF-Imperial_Legion_Expansion-Creeping_Blight.esp
+     RF-PCD-Imperial_Legion_Expansion-Mournhold_Courtiers.esp
+     RF-PCD-Imperial_Legion_Expansion-Creeping_Blight.esp
+     RF-Imperial_Legion_Expansion-Mournhold_Courtiers-Creeping_Blight.esp
+     RF-PCD-Imperial_Legion_Expansion-Mournhold_Courtiers-Creeping_Blight.esp]
+[ALL Reputation_Fixes_All.esp
+     Imperial Legion Expansion.esp]
+
 [Order] ; Imperial Legion Expansion
 Reputation_Fixes_All.ESP
 RF-Imperial_Legion_Expansion.esp
@@ -7046,6 +7083,20 @@ RF-Imperial_Legion_Expansion.esp
 Imperial Legion Expansion.esp
 RF-Imperial_Legion_Expansion.esp
 
+;; (Ref: Reputation Fixes - Patch-48955-1-0-0-1668952952.7z/Docs/Readme.txt )
+[Patch] ; Mournhold Courtiers
+ Patch available at alvazir's Various Patches ( https://www.nexusmods.com/morrowind/mods/48955 ): "Reputation Fixes - Patches"
+[ANY RF-Mournhold_Courtiers.esp
+     RF-PCD-Mournhold_Courtiers.esp
+     RF-Imperial_Legion_Expansion-Mournhold_Courtiers.esp
+     RF-Mournhold_Courtiers-Creeping_Blight.esp
+     RF-PCD-Imperial_Legion_Expansion-Mournhold_Courtiers.esp
+     RF-PCD-Mournhold_Courtiers-Creeping_Blight.esp
+     RF-Imperial_Legion_Expansion-Mournhold_Courtiers-Creeping_Blight.esp
+     RF-PCD-Imperial_Legion_Expansion-Mournhold_Courtiers-Creeping_Blight.esp]
+[ALL Reputation_Fixes_All.esp
+     Mournhold Courtiers.esp]
+
 [Order] ; Mournhold Courtiers
 Reputation_Fixes_All.ESP
 RF-Mournhold_Courtiers.esp
@@ -7053,6 +7104,20 @@ RF-Mournhold_Courtiers.esp
 [Order] ; Mournhold Courtiers
 Mournhold Courtiers.esp
 RF-Mournhold_Courtiers.esp
+
+;; (Ref: Reputation Fixes - Patch-48955-1-0-0-1668952952.7z/Docs/Readme.txt )
+[Patch] ; Creeping Blight
+ Patch available at alvazir's Various Patches ( https://www.nexusmods.com/morrowind/mods/48955 ): "Reputation Fixes - Patches"
+[ANY RF-Creeping_Blight.esp
+     RF-PCD-Creeping_Blight.esp
+     RF-Imperial_Legion_Expansion-Creeping_Blight.esp
+     RF-Mournhold_Courtiers-Creeping_Blight.esp
+     RF-PCD-Imperial_Legion_Expansion-Creeping_Blight.esp
+     RF-PCD-Mournhold_Courtiers-Creeping_Blight.esp
+     RF-Imperial_Legion_Expansion-Mournhold_Courtiers-Creeping_Blight.esp
+     RF-PCD-Imperial_Legion_Expansion-Mournhold_Courtiers-Creeping_Blight.esp]
+[ALL Reputation_Fixes_All.ESP
+     Creeping Blight.esp]
 
 [Order] ; Creeping Blight
 Reputation_Fixes_All.ESP
@@ -8344,8 +8409,9 @@ RPNR_Library.esp
 ;; Blademeister and Adanumuran Reclaimed Patch
 [Requires]
 BlademeisterAdanumuranReclaimedPatch.esp
-[ALL	Blademeister_v1.5.esp
-		Adanumuran Reclaimed.esp]
+[ALL	[ANY	Blademeister_v1.5.esp
+		Blademeister.esp]
+	Adanumuran Reclaimed.esp]
 
 [Order] ; ( ref: readme provided on https://modding-openmw.gitlab.io/momw-patches/ ) (yohannes)
 Blademeister_v1.5.esp
@@ -8359,11 +8425,16 @@ BlademeisterAdanumuranReclaimedPatch.esp
 Adanumuran Reclaimed.esp
 BlademeisterAdanumuranReclaimedPatch.esp
 
+;; Blademeister and Vennin Addamasartus
+[Order]
+Blademeister.esp
+Blademeister_Vennin_Addamasartus_Patch.esp
+
 ;; NOD and Library of Vivec Enhanced Patch
 [Requires]
 NOD_RPNR_Library_patch.esp
 [All	NOD - Core.esm
-		RPNR_Library.ESP]
+	RPNR_Library.ESP]
 
 [Order] ; ( ref: readme provided on https://modding-openmw.gitlab.io/momw-patches/ ) (yohannes)
 NOD - Core.esm
@@ -8376,8 +8447,10 @@ NOD_RPNR_Library_patch.esp
 ;; Blademeister and Daedric Shrine Overhaul Sheogorath Patch
 [Requires]
 BlademeisterDaedricShrineOverhaulSheogorathPatch.esp
-[ALL	Blademeister_v1.5.esp
-		Daedric Shrine Overhaul Sheogorath.esp]
+[ALL	[ANY	Blademeister_v1.5.esp
+		Blademeister.esp]
+	[ANY	Daedric Shrine Overhaul Sheogorath.esp
+		Daedric Shrine Overhaul FULL.esp]]
 
 [Order] ; ( ref: readme provided on https://modding-openmw.gitlab.io/momw-patches/ ) (yohannes)
 Blademeister_v1.5.esp
@@ -8385,10 +8458,12 @@ Daedric Shrine Overhaul Sheogorath.esp
 
 [Order]
 Blademeister_v1.5.esp
+Daedric Shrine Overhaul Sheogorath.esp
 BlademeisterDaedricShrineOverhaulSheogorathPatch.esp
 
 [Order]
-Daedric Shrine Overhaul Sheogorath.esp
+Blademeister.esp
+Daedric Shrine Overhaul FULL.esp
 BlademeisterDaedricShrineOverhaulSheogorathPatch.esp
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -8834,6 +8909,10 @@ VB_EmynDB_Patch.esp
 [Order] ; From Alvazir's Various Patches (Pharis)
 VB_EmynDB_Patch.esp
 VB_EmynDB_Patch - Script Fix.esp
+
+[Order]
+Vvardenfell Brotherhood.esp
+VB - MTP Integration Patch.ESP
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; @Velothi Wall Art [Ashstaar]
@@ -10242,6 +10321,53 @@ Quest Tweaks and Alternatives_<VER>.esp
 [Order] ; otherwise Nordic Fur Cuirass mesh gets overwritten by vanilla cuirass for males and females (MasssiveJuice)
 Alex's Better Fitted Female Armors.ESP
 Clean_Nordic Fur Armour Replacer Symph.esp
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; FINISHED MORROWIND load order (taken from mod page)
+
+[Order]
+Finished Morrowind - BASE PATCH - Part 1.esp
+Finished Morrowind - BASE PATCH - Part 2 (ONLY for Patch for Purists v4.0.2 - Load after PfP Book Typos).esp
+Finished Morrowind - BASE PATCH - Part 3 - Delay Tribunal Expansion Assassins.esp
+Finished Morrowind - BASE PATCH - Part 4 - More Audio Dialogue for Service NPCs.ESP
+OFFICIAL PLUGIN - Area Effect Arrows.esp
+OFFICIAL PLUGIN - Helm of Tohan.esp
+Finished Morrowind - GRAPHICS AND SOUND.ESP
+Finished Morrowind - INCONSISTENCIES - Part 1.ESP
+Finished Morrowind - INCONSISTENCIES - Part 2 - Service Refusal for Contraband.esp
+Finished Morrowind - INCONSISTENCIES - Part 3 - Hospitality Papers for Sadrith Mora.esp
+
+[Order]
+Dubdilla Location Fix.ESP
+Finished Morrowind - BASE PATCH - Part 1.esp
+
+[Order]
+The Publicans.ESP
+Finished Morrowind - BASE PATCH - Part 1.esp
+
+[Order]
+Patch for Purists - Book Typos.ESP
+Finished Morrowind - BASE PATCH - Part 2 (ONLY for Patch for Purists v4.0.2 - Load after PfP Book Typos).esp
+
+[Order]
+Nasty Camonna Tong.esp
+Finished Morrowind - INCONSISTENCIES - Part 1.ESP
+
+[Order]
+Idle Talk.ESP
+Finished Morrowind - INCONSISTENCIES - Part 1.ESP
+
+[Order]
+LDM - Context Matter*.ESP
+Finished Morrowind - INCONSISTENCIES - Part 1.ESP
+
+[Order]
+LDM - Racist Service Refusal.ESP
+Finished Morrowind - INCONSISTENCIES - Part 1.ESP
+
+[Order]
+The Dream is the Door.ESP
+Finished Morrowind - INCONSISTENCIES - Part 1.ESP
 
 ; Even More Illuminated Order Improved Fixes by Lucevar and Ronik (codering)
 [Order]
